@@ -115,7 +115,7 @@ async function usersPictureUpdate(req, res) {
       });
   
       const pictureUrl = `https://${process.env.BACKEND_HOST}/api/1.0/images/${path.basename(req.file.path)}`;
-
+      
   
       await updateUserPicture(userId, pictureUrl);
   
